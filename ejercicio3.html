@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/ejercicios.css">
     <link rel="shortcut icon" href="img/css.ico" type="image/x-icon">
     <!--Title-->
-    <title>Ejercicio 2 de CSS</title>
+    <title>Ejercicio 3 de CSS</title>
 
     <!--SEO-->
     <meta name="description"
@@ -39,35 +39,36 @@
             </div>
         </nav>
     </header>
-    <main id="main-ejercicio2">
+    <main id="main-ejercicio3">
         <section>
             <h2 class="text-center my-3">Ejercicios de práctica de <strong>CSS</strong></h2>
         </section>
         <section id="ejercicios">
-            <h3>Ejercicio 2</h3>
-            <p>Crea un botón que cambie de color cuando el cursor pase sobre él usando la pseudoclase <code>:hover</code>.</p>
+            <h3>Ejercicio 3</h3>
+            <p>Aplica la pseudoclase <code>:focus</code> a un campo de formulario y cambia el color del borde cuando el campo esté enfocado.</p>
             <p>Lo resolví del siguiente modo:</p>
             <p class="tag">CSS:</p>
             <pre><code>
-            button {
-                padding: 10px 20px;
+            input {
+                padding: 10px;
                 font-size: 16px;
-                border: 2px solid #000;
-                background-color: #007bff;
-                color: white;
-                cursor: pointer;
-                transition: background-color 0.3s;
+                border: 2px solid #ccc;
+                transition: border-color 0.3s;
             }
 
-            button:hover {
-                background-color: #0056b3;
+            input:focus {
+                border-color: #007bff;
+                outline: none;
             }
             </code></pre>
             <p class="tag">HTML:</p>
             <pre>
-            &lt;button&gt;Haz clic aquí&lt;/button&gt;
+            &lt;form&gt;
+            &lt;label for="campo"&gt;Escribe algo:&lt;/label&gt;
+            &lt;input type="text" id="campo" name="campo"&gt;
+            &lt;/form&gt;
             </pre>
-            <a href="./resultados/resultado2.html" class="btn btn-success mt-5 res" rel="noopener" target="_blank"> 🧐 Ver resultado</a>
+            <a href="./resultados/resultado3.html" class="btn btn-success mt-5 res" rel="noopener" target="_blank"> 🧐 Ver resultado</a>
             <a href="index.html" class="btn btn-bg-color mt-5" rel="noopener">Volver al inicio</a>
         </section>
     </main>
@@ -85,7 +86,7 @@
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
         crossorigin="anonymous"></script>
     <!--Link a mi JS del ejercicio-->
-    <script src="./js/ejercicio2.js"></script>
+    <script src="./js/ejercicio3.js"></script>
 </body>
 
 </html>

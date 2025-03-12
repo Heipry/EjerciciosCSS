@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 10 - Diseño de 2 a 1 columna</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+     <p>Debes achicar la pantalla para ver el cambio</p>
+    <div class="container">
+       
+        <div>Columna 1</div>
+        <div>Columna 2</div>
+    </div>
+</body>
+
+</html>

@@ -13,18 +13,7 @@
     <link rel="stylesheet" href="./css/ejercicios.css">
     <link rel="shortcut icon" href="img/css.ico" type="image/x-icon">
     <!--Title-->
-    <title>Ejercicio 2 de CSS</title>
-
-    <!--SEO-->
-    <meta name="description"
-        content="Hola bienvenid@ a mi pagina de práctica de CSS, soy Javier Díaz, Desarrollador Full Stack">
-    <link rel="favicon" href="./img/css.ico">
-    <link rel="apple-touch-icon" href="./img/css.ico">
-    <meta name="theme-color" content="#f1d863">
-    <meta name="twitter:card" content="summary">
-    <meta property="og:type" content="website">
-    <meta property="og:title" name="twitter:title" content="Ejercicios de practica de CSS">
-    <meta property="og:description" name="twitter:description" content="Hola bienvenid@ a mi pagina de práctica de CSS">
+    <title>Ejercicio 8 de CSS</title>
 </head>
 
 <body>
@@ -39,35 +28,28 @@
             </div>
         </nav>
     </header>
-    <main id="main-ejercicio2">
+    <main id="main-ejercicio8">
         <section>
             <h2 class="text-center my-3">Ejercicios de práctica de <strong>CSS</strong></h2>
         </section>
         <section id="ejercicios">
-            <h3>Ejercicio 2</h3>
-            <p>Crea un botón que cambie de color cuando el cursor pase sobre él usando la pseudoclase <code>:hover</code>.</p>
+            <h3>Ejercicio 8</h3>
+            <p>Aplica una transformación a un <code>&lt;div&gt;</code>, como rotarlo 45 grados, usando la propiedad <code>transform</code>.</p>
             <p>Lo resolví del siguiente modo:</p>
             <p class="tag">CSS:</p>
             <pre><code>
-            button {
-                padding: 10px 20px;
-                font-size: 16px;
-                border: 2px solid #000;
-                background-color: #007bff;
-                color: white;
-                cursor: pointer;
-                transition: background-color 0.3s;
-            }
-
-            button:hover {
-                background-color: #0056b3;
+            .transformado {
+                transform: rotate(45deg);
+                width: 100px;
+                height: 100px;
+                background-color: #3498db;
             }
             </code></pre>
             <p class="tag">HTML:</p>
             <pre>
-            &lt;button&gt;Haz clic aquí&lt;/button&gt;
+            &lt;div class="transformado"&gt;&lt;/div&gt;
             </pre>
-            <a href="./resultados/resultado2.html" class="btn btn-success mt-5 res" rel="noopener" target="_blank"> 🧐 Ver resultado</a>
+            <a href="./resultados/resultado8.html" class="btn btn-success mt-5 res" rel="noopener" target="_blank"> 🧐 Ver resultado</a>
             <a href="index.html" class="btn btn-bg-color mt-5" rel="noopener">Volver al inicio</a>
         </section>
     </main>
@@ -77,15 +59,13 @@
             <p>Diseñado por <a href="https://javierdiaz.com.es" target="_blank" rel="noopener">Javier Díaz</a></p>
         </div>
     </footer>
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
         integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
         crossorigin="anonymous"></script>
-    <!--Link a mi JS del ejercicio-->
-    <script src="./js/ejercicio2.js"></script>
+    <script src="./js/ejercicio8.js"></script>
 </body>
 
 </html>

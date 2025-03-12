@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/ejercicios.css">
     <link rel="shortcut icon" href="img/css.ico" type="image/x-icon">
     <!--Title-->
-    <title>Ejercicio 2 de CSS</title>
+    <title>Ejercicio 4 de CSS</title>
 
     <!--SEO-->
     <meta name="description"
@@ -39,35 +39,38 @@
             </div>
         </nav>
     </header>
-    <main id="main-ejercicio2">
+    <main id="main-ejercicio4">
         <section>
             <h2 class="text-center my-3">Ejercicios de práctica de <strong>CSS</strong></h2>
         </section>
         <section id="ejercicios">
-            <h3>Ejercicio 2</h3>
-            <p>Crea un botón que cambie de color cuando el cursor pase sobre él usando la pseudoclase <code>:hover</code>.</p>
+            <h3>Ejercicio 4</h3>
+            <p>Aplica diferentes colores a los enlaces en sus diferentes estados (<code>:hover</code>, <code>:active</code>, <code>:visited</code>).</p>
             <p>Lo resolví del siguiente modo:</p>
             <p class="tag">CSS:</p>
             <pre><code>
-            button {
-                padding: 10px 20px;
-                font-size: 16px;
-                border: 2px solid #000;
-                background-color: #007bff;
-                color: white;
-                cursor: pointer;
-                transition: background-color 0.3s;
+            a {
+                text-decoration: none;
+                color: #007bff;
             }
 
-            button:hover {
-                background-color: #0056b3;
+            a:hover {
+                color: #ff5733;
+            }
+
+            a:active {
+                color: #28a745;
+            }
+
+            a:visited {
+                color: #6c757d;
             }
             </code></pre>
             <p class="tag">HTML:</p>
             <pre>
-            &lt;button&gt;Haz clic aquí&lt;/button&gt;
+            &lt;a href="https://www.ejemplo.com"&gt;Enlace ejemplo&lt;/a&gt;
             </pre>
-            <a href="./resultados/resultado2.html" class="btn btn-success mt-5 res" rel="noopener" target="_blank"> 🧐 Ver resultado</a>
+            <a href="./resultados/resultado4.html" class="btn btn-success mt-5 res" rel="noopener" target="_blank"> 🧐 Ver resultado</a>
             <a href="index.html" class="btn btn-bg-color mt-5" rel="noopener">Volver al inicio</a>
         </section>
     </main>
@@ -85,7 +88,7 @@
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
         crossorigin="anonymous"></script>
     <!--Link a mi JS del ejercicio-->
-    <script src="./js/ejercicio2.js"></script>
+    <script src="./js/ejercicio4.js"></script>
 </body>
 
 </html>

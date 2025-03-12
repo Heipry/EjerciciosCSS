@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 3 - Pseudoclase :focus</title>
+    <style>
+        /* Estilos para el campo de formulario */
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Campo de formulario con la pseudoclase :focus</h2>
+    <form>
+        <label for="campo">Escribe algo:</label>
+        <input type="text" id="campo" name="campo">
+    </form>
+</body>
+
+</html>

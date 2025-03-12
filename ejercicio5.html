@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/ejercicios.css">
     <link rel="shortcut icon" href="img/css.ico" type="image/x-icon">
     <!--Title-->
-    <title>Ejercicio 2 de CSS</title>
+    <title>Ejercicio 5 de CSS</title>
 
     <!--SEO-->
     <meta name="description"
@@ -39,35 +39,40 @@
             </div>
         </nav>
     </header>
-    <main id="main-ejercicio2">
+    <main id="main-ejercicio5">
         <section>
             <h2 class="text-center my-3">Ejercicios de práctica de <strong>CSS</strong></h2>
         </section>
         <section id="ejercicios">
-            <h3>Ejercicio 2</h3>
-            <p>Crea un botón que cambie de color cuando el cursor pase sobre él usando la pseudoclase <code>:hover</code>.</p>
+            <h3>Ejercicio 5</h3>
+            <p>Crea un <code>&lt;div&gt;</code> con un fondo de color y un texto en su interior. Luego, creamos otro utilizando una imagen y ajustamos sus propiedades de repetición y posición.</p>
             <p>Lo resolví del siguiente modo:</p>
             <p class="tag">CSS:</p>
             <pre><code>
-            button {
-                padding: 10px 20px;
-                font-size: 16px;
-                border: 2px solid #000;
-                background-color: #007bff;
+            .div-con-fondo {
+                background-color: #4CAF50;
                 color: white;
-                cursor: pointer;
-                transition: background-color 0.3s;
+                padding: 20px;
+                text-align: center;
             }
 
-            button:hover {
-                background-color: #0056b3;
+            /* Cambiar el fondo a una imagen */
+            .div-con-fondo-imagen {
+                background-image: url('../img/fondo.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                color: black;
+                padding: 20px;
+                text-align: center;
             }
             </code></pre>
             <p class="tag">HTML:</p>
             <pre>
-            &lt;button&gt;Haz clic aquí&lt;/button&gt;
+            &lt;div class="div-con-fondo"&gt;Texto con fondo de color&lt;/div&gt;
+            &lt;div class="div-con-fondo-imagen"&gt;Texto con fondo de imagen&lt;/div&gt;
             </pre>
-            <a href="./resultados/resultado2.html" class="btn btn-success mt-5 res" rel="noopener" target="_blank"> 🧐 Ver resultado</a>
+            <a href="./resultados/resultado5.html" class="btn btn-success mt-5 res" rel="noopener" target="_blank"> 🧐 Ver resultado</a>
             <a href="index.html" class="btn btn-bg-color mt-5" rel="noopener">Volver al inicio</a>
         </section>
     </main>
@@ -85,7 +90,7 @@
         integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
         crossorigin="anonymous"></script>
     <!--Link a mi JS del ejercicio-->
-    <script src="./js/ejercicio2.js"></script>
+    <script src="./js/ejercicio5.js"></script>
 </body>
 
 </html>

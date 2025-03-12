@@ -16,10 +16,22 @@ h3 {
   display: block;
   margin: 1rem;
 }
+pre{
+  color: #d63384;
+  border: 1px solid darkgray;
+}
+p.tag{
+  margin-inline-start: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
 /******* Boton de volver*******/
 .btn-bg-color {
   background-color: var(--primary-color);
   border: none;
+}
+.btn.res {
+ display: block;
 }
 /*******Media Querie para pantallas chicas*******/
 @media (max-width: 576px) {
@@ -27,13 +39,4 @@ h3 {
     font-size: 1.25rem;
   }
 }
-/******Clase que agrego pra hacer el ejercicio 29 de JS**********/
-.subtitulos {
-  color: teal; 
-  font-size: 2rem; 
-  font-family: Arial, Helvetica, sans-serif;
-}
-/********Clase que agrego para hacer el ejercicio 30 de JS***********/
-#ejercicio30 {
-  padding: 0.5rem;
-}
+

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ejercicios.css">
+    <link rel="shortcut icon" href="img/javascript.ico" type="image/x-icon">
+    <!--Title-->
+    <title>Ejercicio 28 de JS</title>
+    <!--SEO-->
+    <meta name="description" content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy Javier Díaz, Desarrollador Full Stack">
+    <link rel="favicon" href="./img/javascript.ico">
+    <link rel="apple-touch-icon" href="./img/javascript.ico">
+    <meta name="theme-color" content="#f1d863">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:type" content="website">
+    <meta property="og:title" name="twitter:title" content="Ejercicios de practica de JS- Javier Díaz">
+    <meta property="og:description" name="twitter:description"
+      content="Hola bienvenid@ a mi pagina de práctica de JavaScript, soy Javier Díaz">
+     
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" rel="noopener">
+            <img src="./img/javascript.png" alt="hoja con la abreviacion de JavaScript" class="d-inline-block align-text-top" width="42" height="42">
+            <h1>Ejercicios de JavaScript</h1>
+          </a>
+        </div>
+      </nav>
+  </header>
+    <main id="main-ejercicio1">
+      <section>
+        <h2 class="text-center my-3">Ejercicios de práctica de <strong>JavaScript</strong></h2>
+      </section>
+      <section id="ejercicios">
+        <h3>Ejercicio 28</h3>
+        <p>Contador de click</p>
+        <ol>
+          <li>Crea un botón en HTML qué diga "clickeame"</li>
+          <li>Crea un función <strong>contadorDeClick()</strong> y programa que cada vez que se haga click se muestre por la consola el conteo de las veces que se ha realizado click en el botón.</li>
+        </ol>
+        <p>Primer botón:</p>
+        <code class="code-block">let cantidad = 0;</code>
+        <code class="code-block">function contadorDeClick() {</code>
+        <code class="code-block mx-5">cantidad+=1;</code>
+        <code class="code-block mx-5">console.info(cantidad);</code>
+        <code class="code-block">}</code>
+        <p>Segundo botón:</p>
+        <code class="code-block">let veces = 0;</code>
+        <code class="code-block">function contadorClick() {</code>
+        <code class="code-block mx-5">veces+01;</code>
+        <code class="code-block mx-5">console.log(veces)</code>
+        <code class="code-block">}</code>
+        <code class="code-block">let btn = document.getElementById("btn2")</code>
+        <code class="code-block mx-5">btn.addEventListener('click',contadorClick);</code>
+  
+        <h3>Practica del evento <strong>onclick </strong> para llamar a la función <strong>contadorDeClick()</strong> desde el HTML</h3>
+        <button id="btn" onclick="contadorDeClick()"> clickeame</button>
+        <p>Práctica del método <strong>addEventListener</strong> de JavaScript </p>
+        <button id="btn2"> clickeame</button>
+        <p>👀 Hay que verlo desde la consola</p>
+ 
+
+        <a href="index.html" class="btn btn-bg-color mt-5" rel="noopener">Volver al inicio</a> 
+
+      </section>
+    </main>
+  
+    <footer class="footer mt-auto bg-color-footer">
+      <div class="container py-2">
+        <p>Diseñado por <a href="https://javierdiaz.com.es" target="_blank" rel="noopener">Javier Díaz</a></p>
+      </div>
+    </footer>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="./js/ejercicio28.js"></script>
+  </body>
+</html>

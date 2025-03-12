@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f1d863;
+  --text-gray: #575553;
+}
+
+body {
+  color: var(--text-gray);
+}
+/****** Header*******/
+header .navbar-color {
+  background-color: var(--primary-color);
+}
+
+header .navbar-color a {
+  text-decoration: none;
+  color: var(--text-gray);
+}
+header .navbar-color h1 {
+  display: inline-block;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+}
+
+/******Main******/
+#main-ejercicio1 {
+  min-height: 100vh;
+} 
+h2, h3 {
+  text-align: center;
+}
+/*****Bloques de colores con ejercicios*******/
+#ejercicios, #ejercicios2, #ejercicios3, #ejercicios4, #ejercicios5, #ejercicios6, #ejercicios7 {
+  background-color: rgb(240, 218, 218);
+  border-radius: 0.75rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  width: 98%;
+}  
+
+
+/*Code*/
+.code-inline {
+  display: inline-block;
+  margin: 1rem;
+}
+
+/****** Footer*****/
+.bg-color-footer {
+  background-color: var(--primary-color);
+}
+.bg-color-footer p, .bg-color-footer p a {
+  color: var(--text-gray);
+  font-weight: 500;
+  text-align: center;
+}

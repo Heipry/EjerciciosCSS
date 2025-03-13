@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 14 - Flexbox Barra de Navegación</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            background-color: #999;
+            padding: 10px;
+            /* Flexbox se encargará de la redistribución de los elementos sin usar media queries */
+            min-width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contacto</a>
+    </div>
+    <p>Debes achicar la pantalla para ver el cambio</p>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 
-# Ejercicios de JavaScript
+# Ejercicios de CSS
 
 
 ## Tecnologías aplicadas 🛠️

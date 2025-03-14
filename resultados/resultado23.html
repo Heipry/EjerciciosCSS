@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resultado Ejercicio Formulario</title>
+    <style>
+        form input,
+        form textarea {
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        form button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Formulario con bordes redondeados y cambio de color al enfocar</h2>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre">
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo">
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" placeholder="Tu mensaje"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

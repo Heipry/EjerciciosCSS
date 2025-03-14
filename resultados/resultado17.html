@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resultado Ejercicio 17</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 100px);
+            gap: 10px;
+        }
+
+        .grid-item {
+            background-color: #007BFF;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .grid-item:nth-child(1) {
+            order: 6;
+        }
+
+        .grid-item:nth-child(2) {
+            order: 5;
+        }
+
+        .grid-item:nth-child(3) {
+            order: 4;
+        }
+
+        .grid-item:nth-child(4) {
+            order: 3;
+        }
+
+        .grid-item:nth-child(5) {
+            order: 2;
+        }
+
+        .grid-item:nth-child(6) {
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Resultado del ejercicio 17</h2>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+</body>
+
+</html>

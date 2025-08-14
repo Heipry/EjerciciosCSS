@@ -25,3 +25,9 @@ Los archivos están organizados por temas. Cada apartado contiene los archivos d
 * **CSS3**
 * **Bootstrap**
 * **JavaScript**
+
+---
+
+### Sobre el autor
+
+Para conocer más sobre mi trayectoria profesional, puedes visitar mi [**CV online**](https://javierdiaz.com.es/).
